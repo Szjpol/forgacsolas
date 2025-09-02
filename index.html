@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forgácsolás • Szolgáltatások és ajánlatkérés</title>
+  <meta name="description" content="Esztergálás, marás, fúrás, felületkezelés – gyors határidővel, gyártói szemlélettel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN (könnyű prototípushoz) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand:#0ea5e9; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Hero -->
+  <header class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-sky-600 via-sky-500 to-cyan-400"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24 text-white">
+      <nav class="flex items-center justify-between">
+        <div class="font-extrabold text-2xl tracking-tight">Forgácsolás</div>
+        <div class="hidden sm:flex gap-6 text-white/90">
+          <a href="#szolgaltatasok" class="hover:text-white">Szolgáltatások</a>
+          <a href="#geppark" class="hover:text-white">Géppark</a>
+          <a href="#munkak" class="hover:text-white">Referencia</a>
+          <a href="#arak" class="hover:text-white">Árak</a>
+          <a href="#kapcsolat" class="hover:text-white">Kapcsolat</a>
+        </div>
+      </nav>
+      <div class="mt-14 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">CNC esztergálás és marás <span class="text-sky-100">gyártói szemlélettel</span></h1>
+          <p class="mt-4 text-white/90 text-lg">Egyedi és kis szériás alkatrészek, gyors ajánlatadás, mérnöki támogatás (DfM). Alumínium, acél, rozsdamentes, műanyag.</p>
+          <div class="mt-6 flex gap-3">
+            <a href="#ajanlat" class="inline-block rounded-xl bg-white text-sky-700 font-semibold px-5 py-3 shadow hover:shadow-md">Kérek ajánlatot</a>
+            <a href="#munkak" class="inline-block rounded-xl border border-white/40 px-5 py-3 font-semibold text-white hover:bg-white/10">Referencia</a>
+          </div>
+          <dl class="mt-8 grid grid-cols-3 gap-4 text-sm text-white/90">
+            <div><dt class="font-semibold">Átfordulás</dt><dd>24–72 óra*</dd></div>
+            <div><dt class="font-semibold">Pontosság</dt><dd>±0,01 mm</dd></div>
+            <div><dt class="font-semibold">Rajzformátum</dt><dd>STEP, DXF, PDF</dd></div>
+          </dl>
+          <p class="text-xs text-white/70 mt-1">*Anyag- és terhelésfüggő</p>
+        </div>
+        <div class="relative">
+          <div class="glass rounded-2xl shadow-2xl p-6">
+            <img src="https://images.unsplash.com/photo-1612550761236-74432f8529d5?q=80&w=1400&auto=format&fit=crop" alt="CNC marás" class="rounded-lg w-full object-cover aspect-video"/>
+            <div class="mt-4 grid grid-cols-3 gap-3 text-sm">
+              <div class="rounded-xl bg-white/70 p-3 text-slate-700"><div class="font-semibold">ISO 2768</div><div>m-k</div></div>
+              <div class="rounded-xl bg-white/70 p-3 text-slate-700"><div class="font-semibold">Felület</div><div>Ra 1.6–3.2</div></div>
+              <div class="rounded-xl bg-white/70 p-3 text-slate-700"><div class="font-semibold">Anyag</div><div>Al, C45, 1.4301</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Szolgáltatások -->
+  <section id="szolgaltatasok" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-extrabold">Szolgáltatások</h2>
+    <p class="mt-2 text-slate-600">Gyártás mellett tervezési támogatás, hogy a darab olcsóbban és gyorsabban készüljön el.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="rounded-2xl border bg-white p-6 shadow-sm">
+        <h3 class="font-semibold text-lg">CNC esztergálás</h3>
+        <p class="mt-2 text-sm text-slate-600">Ø300 mm-ig, L=500 mm-ig; belső furat, menet, beszúrás, letörés.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow-sm">
+        <h3 class="font-semibold text-lg">CNC marás</h3>
+        <p class="mt-2 text-sm text-slate-600">X=600, Y=400, Z=400 mm munkatér; zsebek, hornyok, 3D kontúrok.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow-sm">
+        <h3 class="font-semibold text-lg">Kiegészítők</h3>
+        <p class="mt-2 text-sm text-slate-600">Felületkezelés (eloxálás, horganyzás), gravírozás, összeszerelés, mérési jegyzőkönyv.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Géppark -->
+  <section id="geppark" class="bg-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-extrabold">Géppark</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6 text-sm">
+        <ul class="rounded-2xl border bg-white p-6 shadow-sm space-y-2">
+          <li><span class="font-semibold">Eszterga:</span> Fanuc/Siemens vezérlés, 3 pofa tokmány, tüske.</li>
+          <li><span class="font-semibold">Marógép:</span> 3 tengely, 10k rpm, hűtőközeg.</li>
+          <li><span class="font-semibold">Mérés:</span> digitális tolómérő, mikrométer 0–150 mm, furatmikro 6–100 mm.</li>
+        </ul>
+        <ul class="rounded-2xl border bg-white p-6 shadow-sm space-y-2">
+          <li><span class="font-semibold">Anyagok:</span> AlMg3/AlMgSi0.5, C45, 1.4301, POM-C, PA6G.</li>
+          <li><span class="font-semibold">Pontosság:</span> általános ±0,01 mm, igény szerint szorosabb.</li>
+          <li><span class="font-semibold">Dokumentum:</span> STEP, IGES, DXF, PDF – saját CAM.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referenciák -->
+  <section id="munkak" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-extrabold">Referencia képek</h2>
+    <p class="mt-2 text-slate-600">Valós munkák/placeholder – cseréld saját fotókra.</p>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <img class="rounded-xl shadow-sm aspect-video object-cover" src="https://images.unsplash.com/photo-1604762525321-cf22cc2bd170?q=80&w=1200&auto=format&fit=crop" alt="Referencia 1"/>
+      <img class="rounded-xl shadow-sm aspect-video object-cover" src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=1200&auto=format&fit=crop" alt="Referencia 2"/>
+      <img class="rounded-xl shadow-sm aspect-video object-cover" src="https://images.unsplash.com/photo-1581092795360-fd1ca03fb39b?q=80&w=1200&auto=format&fit=crop" alt="Referencia 3"/>
+    </div>
+  </section>
+
+  <!-- Árak / folyamat -->
+  <section id="arak" class="bg-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-extrabold">Árajánlat menete</h2>
+      <ol class="mt-6 grid md:grid-cols-3 gap-6 list-decimal list-inside">
+        <li class="rounded-2xl border bg-white p-6 shadow-sm">
+          <div class="font-semibold">1) Küldd el a rajzot</div>
+          <p class="text-sm text-slate-600">STEP/DXF/PDF és darabszám, anyag, tűrések.</p>
+        </li>
+        <li class="rounded-2xl border bg-white p-6 shadow-sm">
+          <div class="font-semibold">2) DfM ellenőrzés</div>
+          <p class="text-sm text-slate-600">Gyárthatósági javaslatok, szükséges módosítások.</p>
+        </li>
+        <li class="rounded-2xl border bg-white p-6 shadow-sm">
+          <div class="font-semibold">3) Gyártás & szállítás</div>
+          <p class="text-sm text-slate-600">Határidő egyeztetés, csomagolás, számla.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Ajánlatkérés / Kapcsolat -->
+  <section id="kapcsolat" class="max-w-3xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-extrabold">Kapcsolat & ajánlatkérés</h2>
+    <p class="mt-2 text-slate-600">Töltsd ki az űrlapot vagy írj közvetlenül: <a href="mailto:ajanlat@vallalkozas.hu" class="text-sky-700 underline">ajanlat@vallalkozas.hu</a></p>
+
+    <form id="ajanlat" class="mt-6 grid gap-4 rounded-2xl border bg-white p-6 shadow-sm" onsubmit="handleSubmit(event)">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium">Név</label>
+          <input required type="text" name="name" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="Név" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input required type="email" name="email" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="email@cimed.hu" />
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Üzenet</label>
+        <textarea required name="message" rows="4" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="Röviden a projektről, darabszám, anyag, határidő…"></textarea>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Rajz/STEP feltöltése</label>
+        <input type="file" name="files" class="mt-1 w-full rounded-xl border px-3 py-2" multiple />
+        <p class="text-xs text-slate-500 mt-1">Fejlesztői demó: fájlokat ideiglenesen nem küldjük el – emailben kérjük.</p>
+      </div>
+      <div class="flex items-center justify-between">
+        <label class="inline-flex items-center gap-2 text-sm">
+          <input type="checkbox" required class="rounded border-slate-300" />
+          Adatkezelés elfogadása
+        </label>
+        <button class="rounded-xl bg-sky-600 px-5 py-2.5 font-semibold text-white hover:bg-sky-700">Küldés</button>
+      </div>
+      <p id="formStatus" class="hidden text-sm"></p>
+    </form>
+  </section>
+
+  <footer class="border-t bg-white/70">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
+      <div>© <span id="year"></span> Forgácsolás • Minden jog fenntartva.</div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:underline">Impresszum</a>
+        <a href="#" class="hover:underline">Adatkezelés</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.classList.remove('hidden');
+      status.textContent = 'Köszönjük! Demó módban vagyunk – küldd emailben a rajzot.';
+      status.className = 'text-sky-700 text-sm';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
